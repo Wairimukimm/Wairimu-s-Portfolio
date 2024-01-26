@@ -6,73 +6,33 @@
     <link rel="stylesheet" href="style.css">
     <title>Priscillah's Personal Website</title>
     <style>
-        /* Additional styles for smooth scrolling */
-        body {
-            scroll-behavior: smooth;
-            font-family: 'Arial', sans-serif;
-            background-color: #f5f5f5;
-            color: #333;
+        /* ... (existing styles) ... */
+
+        section {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 40px 0;
         }
 
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
+        .about-me, .machine-learning {
+            flex-direction: row-reverse;
         }
 
-        header {
-            background-color: #3498db;
-            color: white;
-            text-align: center;
-            padding: 2em 0;
+        .project {
+            max-width: 400px;
         }
 
-        header h1 {
-            margin: 0;
-            font-size: 2.5em;
-        }
-
-        header p {
-            margin: 5px 0 0;
-            font-size: 1.2em;
-        }
-
-        nav {
-            background-color: #fff;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-        }
-
-        .nav-link {
-            cursor: pointer;
-            color: #3498db;
-            text-decoration: none;
-            margin-right: 20px;
-            font-weight: bold;
-            font-size: 1.1em;
-            padding: 10px;
-            transition: color 0.3s ease;
-        }
-
-        .nav-link:hover {
-            color: #1c78c3;
-        }
-
-        /* Rest of your existing styles... */
-
-        footer {
-            background-color: #34495e;
-            color: white;
-            text-align: center;
-            padding: 1em 0;
-            position: relative;
-            margin-top: 20px;
+        .project img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+            border-radius: 8px;
         }
     </style>
 </head>
 <body>
+    <!-- Header -->
     <header>
         <div class="container">
             <h1>PRISCILLAH WAIRIMU</h1>
@@ -91,35 +51,44 @@
         </div>
     </nav>
 
+    <!-- About Me Section -->
     <section id="about-me" class="about-me">
         <div class="container">
-            <h2>About Me</h2>
-            <p>
-                Hello! I'm Priscillah Wairimu, a passionate data scientist and machine learning engineer. 
-                You can reach me at <a href="mailto:pwairimu046@gmail.com">pwairimu046@gmail.com</a>. 
-                Connect with me on <a href="https://www.linkedin.com/in/priscillah-wairimu-99b75a1b1/" target="_blank">LinkedIn</a>.
-            </p>
+            <div class="project">
+                <img src="about_me_image.jpg" alt="About Me Image">
+                <h2>About Me</h2>
+                <p>
+                    Hello! I'm Priscillah Wairimu, a passionate data scientist and machine learning engineer. 
+                    You can reach me at <a href="mailto:pwairimu046@gmail.com">pwairimu046@gmail.com</a>. 
+                    Connect with me on <a href="https://www.linkedin.com/in/priscillah-wairimu-99b75a1b1/" target="_blank">LinkedIn</a>.
+                </p>
+            </div>
         </div>
     </section>
 
+    <!-- EDA Projects Section -->
     <section id="eda-projects" class="eda-projects">
         <div class="container">
-            <h2>EDA Projects</h2>
             <div class="project">
+                <img src="eda_projects_image.jpg" alt="EDA Projects Image">
+                <h2>EDA Projects</h2>
                 <h3>EDA Project - GlassDoor</h3>
                 <p>Description of GlassDoor Project. This project involves data cleaning and exploratory data analysis to get meaningful insights from the data.</p>
             </div>
             <div class="project">
+                <img src="eda_project_2_image.jpg" alt="EDA Project 2 Image">
                 <h3>EDA Project 2</h3>
                 <p>Description of EDA Project 2. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
             </div>
         </div>
     </section>
 
+    <!-- Machine Learning Section -->
     <section id="machine-learning" class="machine-learning">
         <div class="container">
-            <h2>Machine Learning</h2>
             <div class="project">
+                <img src="ml_project_1_image.jpg" alt="ML Project 1 Image">
+                <h2>Machine Learning</h2>
                 <h3>ML Project 1</h3>
                 <p>Description of Machine Learning Project 1. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
             </div>
@@ -127,10 +96,12 @@
         </div>
     </section>
 
+    <!-- Visualization Section -->
     <section id="visualization" class="visualization">
         <div class="container">
-            <h2>Visualization</h2>
             <div class="project">
+                <img src="visualization_project_1_image.jpg" alt="Visualization Project 1 Image">
+                <h2>Visualization</h2>
                 <h3>Visualization Project 1</h3>
                 <p>Description of Visualization Project 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </div>
@@ -138,3 +109,12 @@
         </div>
     </section>
 
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Priscillah Wairimu. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
