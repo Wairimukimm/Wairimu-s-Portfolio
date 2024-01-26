@@ -5,6 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Priscillah's Personal Website</title>
+    <style>
+        /* Additional styles for smooth scrolling */
+        body {
+            scroll-behavior: smooth;
+        }
+
+        .nav-link {
+            cursor: pointer;
+            color: #3498db;
+            text-decoration: none;
+            margin-right: 20px;
+            font-weight: bold;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -14,68 +28,69 @@
         </div>
     </header>
 
-    <section class="about-me">
+    <!-- Navigation Links -->
+    <nav>
+        <div class="container">
+            <a class="nav-link" href="#about-me">About Me</a>
+            <a class="nav-link" href="#eda-projects">EDA Projects</a>
+            <a class="nav-link" href="#machine-learning">Machine Learning</a>
+            <a class="nav-link" href="#visualization">Visualization</a>
+            <a class="nav-link" href="#articles">Articles</a>
+        </div>
+    </nav>
+
+    <section id="about-me" class="about-me">
         <div class="container">
             <h2>About Me</h2>
-            <p>
-                Hello! I'm Priscillah Wairimu, a passionate data scientist and machine learning engineer. 
-                You can reach me at <a href="mailto:pwairimu046@gmail.com">your.email@example.com</a>. 
-                Connect with me on <a href="https://www.linkedin.com/in/priscillah-wairimu-99b75a1b1/" target="_blank">LinkedIn</a>.
-            </p>
+            <!-- ... (rest of the About Me section) ... -->
         </div>
     </section>
 
-    <section class="eda-projects">
+    <section id="eda-projects" class="eda-projects">
         <div class="container">
             <h2>EDA Projects</h2>
-            <div class="project">
-                <h3>EDA Project 1</h3>
-                <p>Description of GlassDoor Project. This project invloves data cleaning and explaratory data analysis to get meaningful insights from the data..</p>
-            </div>
-            <div class="project">
-                <h3>EDA Project 2</h3>
-                <p>Description of EDA Project 2. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-            </div>
+            <!-- ... (rest of the EDA Projects section) ... -->
         </div>
     </section>
 
-    <section class="machine-learning">
+    <section id="machine-learning" class="machine-learning">
         <div class="container">
             <h2>Machine Learning</h2>
-            <div class="project">
-                <h3>ML Project 1</h3>
-                <p>Description of Machine Learning Project 1. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-            </div>
-            <!-- Add more machine learning projects as needed -->
+            <!-- ... (rest of the Machine Learning section) ... -->
         </div>
     </section>
 
-    <section class="visualization">
+    <section id="visualization" class="visualization">
         <div class="container">
             <h2>Visualization</h2>
-            <div class="project">
-                <h3>Visualization Project 1</h3>
-                <p>Description of Visualization Project 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            </div>
-            <!-- Add more visualization projects as needed -->
+            <!-- ... (rest of the Visualization section) ... -->
         </div>
     </section>
 
-    <section class="articles">
+    <section id="articles" class="articles">
         <div class="container">
             <h2>Articles</h2>
-            <div class="article">
-                <h3>Article 1</h3>
-                <p>Your insightful article on a relevant topic. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-            </div>
-            <!-- Add more articles as needed -->
+            <!-- ... (rest of the Articles section) ... -->
         </div>
     </section>
 
     <footer>
         <div class="container">
-            <p>&copy; 2024 Your Personal Website</p>
+            <p>&copy; 2024 Priscillah's Personal Website</p>
         </div>
     </footer>
+
+    <!-- JavaScript for smooth scrolling -->
+    <script>
+        document.querySelectorAll('.nav-link').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
 </body>
 </html>
