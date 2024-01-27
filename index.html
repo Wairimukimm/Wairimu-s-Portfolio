@@ -6,73 +6,100 @@
     <link rel="stylesheet" href="style.css">
     <title>Priscillah's Personal Website</title>
     <style>
-        /* Additional styles for smooth scrolling */
-        body {
-            scroll-behavior: smooth;
-            font-family: 'Arial', sans-serif;
-            background-color: #f5f5f5;
-            color: #333;
+        /* Additional styles for smooth scrolling... (your existing styles) */
+
+        /* Styles for the new sections */
+        .section {
+            margin-top: 40px;
         }
 
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
+        .section-heading {
+            font-size: 2em;
+            margin-bottom: 20px;
         }
 
-        header {
-            background-color: #3498db;
-            color: white;
-            text-align: center;
-            padding: 2em 0;
+        .project {
+            margin-bottom: 30px;
         }
 
-        header h1 {
-            margin: 0;
-            font-size: 2.5em;
+        .project img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
         }
 
-        header p {
-            margin: 5px 0 0;
-            font-size: 1.2em;
-        }
-
-        nav {
-            background-color: #fff;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-        }
-
-        .nav-link {
-            cursor: pointer;
-            color: #3498db;
+        .project a {
             text-decoration: none;
-            margin-right: 20px;
+            color: #3498db;
             font-weight: bold;
-            font-size: 1.1em;
-            padding: 10px;
-            transition: color 0.3s ease;
         }
 
-        .nav-link:hover {
+        .project a:hover {
             color: #1c78c3;
-        }
-
-        /* Rest of your existing styles... */
-
-        footer {
-            background-color: #34495e;
-            color: white;
-            text-align: center;
-            padding: 1em 0;
-            position: relative;
-            margin-top: 20px;
         }
     </style>
 </head>
 <body>
-    <!-- Your existing HTML content... -->
+    <header>
+        <div class="container">
+            <h1>Priscillah's Personal Website</h1>
+            <p>Welcome to my personal corner on the web!</p>
+        </div>
+    </header>
+
+    <nav>
+        <div class="container">
+            <a class="nav-link" href="#about-me">About Me</a>
+            <a class="nav-link" href="#articles">Articles</a>
+            <a class="nav-link" href="#eda-pictures">EDA Pictures</a>
+            <a class="nav-link" href="#machine-learning">Machine Learning</a>
+            <a class="nav-link" href="#deep-learning">Deep Learning</a>
+            <a class="nav-link" href="#visualization">Visualization</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <!-- About Me Section -->
+        <section id="about-me" class="section">
+            <h2 class="section-heading">About Me</h2>
+            <p>Email: priscillah@example.com</p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/priscillah" target="_blank">Priscillah's LinkedIn</a></p>
+            <!-- Add a relevant picture for the About Me section -->
+            <img src="about_me_picture.jpg" alt="About Me Picture">
+        </section>
+
+        <!-- Articles Section -->
+        <section id="articles" class="section">
+            <h2 class="section-heading">Articles</h2>
+            <div class="project">
+                <img src="article1_thumbnail.jpg" alt="Article 1 Thumbnail">
+                <p>Article 1 Description...</p>
+                <a href="article1_link.html" target="_blank">Read more</a>
+            </div>
+            <!-- Repeat similar structure for other articles... -->
+        </section>
+
+        <!-- EDA Pictures Section -->
+        <section id="eda-pictures" class="section">
+            <h2 class="section-heading">EDA Pictures</h2>
+            <div class="project">
+                <img src="eda_picture1.jpg" alt="EDA Picture 1">
+                <p>EDA Picture 1 Description...</p>
+                <a href="eda_project1.html" target="_blank">View project</a>
+            </div>
+            <!-- Repeat similar structure for other EDA pictures... -->
+        </section>
+
+        <!-- Machine Learning Section -->
+        <!-- Repeat the structure for other sections... -->
+
+        <!-- Deep Learning Section -->
+
+        <!-- Visualization Section -->
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Priscillah's Personal Website. All rights reserved.</p>
+    </footer>
 </body>
 </html>
